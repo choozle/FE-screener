@@ -1,0 +1,122 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f1117;
+  color: #e2e8f0;
+}
+
+.screener {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ── header ──────────────────────────────── */
+.screener__header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 24px;
+  height: 56px;
+  background: #1a1d27;
+  border-bottom: 1px solid #2d3148;
+  flex-shrink: 0;
+}
+
+.screener__header h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  color: #a5b4fc;
+}
+
+.screener__header nav {
+  display: flex;
+  gap: 8px;
+}
+
+.screener__header nav button {
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid #3b3f5c;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.screener__header nav button:hover {
+  background: #2d3148;
+  color: #e2e8f0;
+}
+
+.screener__header nav button.active {
+  background: #312e81;
+  border-color: #6366f1;
+  color: #e0e7ff;
+}
+
+/* ── body ────────────────────────────────── */
+.screener__body {
+  flex: 1;
+  padding: 32px 24px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ── problem panel ───────────────────────── */
+.problem-panel h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  color: #c7d2fe;
+}
+
+.problem-panel p {
+  margin: 0 0 16px;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.problem-panel__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+}
+
+.problem-panel__label {
+  color: #64748b;
+}
+
+.problem-panel__file {
+  background: #1e2235;
+  border: 1px solid #2d3148;
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: #7dd3fc;
+  font-size: 0.78rem;
+}
+
+/* ── test code block ─────────────────────── */
+.test-code {
+  background: #131720;
+  border: 1px solid #2d3148;
+  border-radius: 8px;
+  padding: 20px;
+  overflow-x: auto;
+  font-size: 0.82rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.test-code code {
+  color: #a5f3a5;
+  font-family: 'Fira Code', 'Cascadia Code', monospace;
+  white-space: pre;
+}
