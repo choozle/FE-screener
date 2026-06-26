@@ -1,22 +1,19 @@
-import { createSlice, type PayloadAction } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
+import type { CardData } from "../components/Card";
+import data from "../data.json";
 
 interface ScreenerState {
-  activeProblemId: string
+  cardData: CardData[];
 }
 
 const initialState: ScreenerState = {
-  activeProblemId: 'card-list',
-}
+  cardData: data as CardData[],
+};
 
 const screenerSlice = createSlice({
-  name: 'screener',
+  name: "screener",
   initialState,
-  reducers: {
-    setActiveProblem(state, action: PayloadAction<string>) {
-      state.activeProblemId = action.payload
-    },
-  },
-})
+  reducers: {},
+});
 
-export const { setActiveProblem } = screenerSlice.actions
-export default screenerSlice.reducer
+export default screenerSlice.reducer;

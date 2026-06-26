@@ -1,10 +1,10 @@
-import type { CardData } from './Card'
+import { useSelector } from "react-redux";
+import { selectCardData } from "../store/selectors";
 
-interface Props {
-  cards: CardData[]
-}
-
-export function CardList(_props: Props) {
+const CardList = () => {
+  const cardData = useSelector(selectCardData);
   // TODO: implement this component
-  return null
-}
+  return null;
+};
+
+export default CardList;
