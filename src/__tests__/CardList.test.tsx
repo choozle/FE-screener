@@ -16,7 +16,7 @@ function renderWithStore() {
 describe("CardList", () => {
   it("renders a card for each item", () => {
     renderWithStore();
-    expect(screen.getAllByRole("article")).toHaveLength(2);
+    expect(screen.getAllByRole("article")).toHaveLength(3);
   });
 
   it("renders each card title", () => {

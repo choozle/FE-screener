@@ -10,7 +10,14 @@ interface Props {
 
 const Card = ({ card }: Props) => {
   // TODO: implement this component
-  return <article>{card.title}</article>;
+  return (
+    <div>
+      <article>
+        <h2>{card.title}</h2>
+        <p>{card.description}</p>
+      </article>
+    </div>
+  );
 };
 
 export default Card;

@@ -29,8 +29,8 @@ describe("App", () => {
   });
 
   // Intentional failing test: data has 3 cards, not 2
-  it("renders exactly 2 cards", () => {
+  it("renders exactly 3 cards", () => {
     renderWithStore();
-    expect(screen.getAllByRole("article")).toHaveLength(2);
+    expect(screen.getAllByRole("article")).toHaveLength(3);
   });
 });

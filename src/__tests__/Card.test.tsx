@@ -14,8 +14,9 @@ describe("Card", () => {
     expect(screen.getByText("Octopus")).toBeInTheDocument();
   });
 
+  // has eight what?
   it("renders the card description", () => {
     render(<Card card={card} />);
-    expect(screen.getByText("Has eight limbs")).toBeInTheDocument();
+    expect(screen.getByText("Has eight arms")).toBeInTheDocument();
   });
 });

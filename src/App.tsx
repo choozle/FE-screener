@@ -1,5 +1,6 @@
 import { useAppDispatch } from "./store/hooks";
 import "./App.css";
+import CardList from "./components/CardList";
 
 export function App() {
   const dispatch = useAppDispatch();
@@ -10,7 +11,9 @@ export function App() {
         <h1>FE Coding Screener</h1>
       </header>
 
-      <main className="screener__body"></main>
+      <main className="screener__body">
+        <CardList />
+      </main>
     </div>
   );
 }
