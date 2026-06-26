@@ -14,7 +14,6 @@ function renderWithStore() {
 }
 
 describe("CardList", () => {
-  // Intentional failing test: data has 3 items, not 2
   it("renders a card for each item", () => {
     renderWithStore();
     expect(screen.getAllByRole("article")).toHaveLength(2);

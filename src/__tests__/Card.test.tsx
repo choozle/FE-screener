@@ -14,7 +14,6 @@ describe("Card", () => {
     expect(screen.getByText("Octopus")).toBeInTheDocument();
   });
 
-  // Intentional failing test: wrong description text
   it("renders the card description", () => {
     render(<Card card={card} />);
     expect(screen.getByText("Has eight limbs")).toBeInTheDocument();
