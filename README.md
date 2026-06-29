@@ -2,7 +2,9 @@
 
 ### Instructions:
 
-- This challenge will be conducted within CodeSandbox.
+- You'll be walking your interviewer through this exercise
+  - Be specific with your instructions
+  - Don't hesitate to ask questions
 - Checkout a new branch matching the pattern `your-name-DD/MM/YYYY`
 - Start the local development server.
 - Run the tests.
